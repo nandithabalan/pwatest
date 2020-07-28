@@ -1,0 +1,50 @@
+.dash {
+  background: #D9E0E7;
+  position: absolute;
+  width: 99%;
+  height: 80%;
+  top: 14%;
+}
+
+.topbar {
+  position: fixed;
+  width: 99%;
+  height: 15%;
+  background-color: #ffffff;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+
+.topbar-left {
+  box-sizing: border-box;
+  padding: 8px 8px 0px 8px;
+  height: 15%;
+  width: 15vw;
+  /*background-color: #f0f3f5;*/
+  float: left;
+  -moz-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+.topbar-right {
+  padding: 15px 20px 15px 270px;
+  float:right;
+  width:70vw;
+}
+
+.clearfix:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+
+.company-name {
+  text-decoration: firebrick;
+  color: firebrick;
+  position: absolute;
+  padding-left:4px;
+  font-size: 20px;
+  margin-top:5.5vh;
+}

@@ -1,0 +1,20 @@
+<div class="topbar clearfix">
+  <div class="topbar-left">
+      <div class="logo" routerlink="/" style="cursor: pointer; outline: none;" tabindex="0">
+        <img alt="Logo" src="assets/images/logo.png">
+        <span class="company-name"><b>TELEKINESS</b></span>
+      </div>
+
+
+  </div>
+  <div class="topbar-right"> </div>
+</div>
+<div class="dash my-alternate-theme">
+  <nav mat-tab-nav-bar backgroundColor="primary">
+    <a mat-tab-link *ngFor="let link of links"
+       (click)="activeLink = link"
+       [routerLink]="link.link"
+       [active]="activeLink == link"> {{link.label}} </a>
+  </nav>
+  <router-outlet></router-outlet>
+</div>
